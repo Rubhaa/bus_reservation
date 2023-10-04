@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+
+
+.select {
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: black;
+}
+
+.select h2 {
+  width: 60%;
+  margin: 50px auto 35px auto;
+}
+
+.exit {
+  position: relative;
+  height: 60px;
+}
+
+  .plane a:link, .plane a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 40px;
+    margin-left:80px ;
+  }
+  
+  .plane a:hover, .plane a:active {
+    background-color: red;
+  }
+
+.exit:after {
+  content: "Driver";
+  font-size: 15px;
+  line-height: 18px;
+  padding: 5px;
+  display: block;
+  position: absolute;
+  background: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.exit:after {
+  right: 10px;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.seat {
+  display: flex;
+  flex: 0 0 17.21%;
+  padding: 5px;
+  position: relative;
+}
+
+.seat label {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 4rem;
+  padding: 4px 0;
+  background: #5bfc60;
+  border-radius: 4px; 
+  color: black; 
+}
+
+.seat label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px white;
+}
+
+.seat:nth-child(2) {
+  margin-right: 14%;
+}
+.seat input[type=checkbox] {
+  position: absolute;
+}
+.seat input[type=checkbox]:checked + label {
+  background: rgb(213, 209, 213);
+
+}
+#display{
+  display: inline-block;
+}
+
+.header{
+   
+  width: 100%;
+  height: 95px;
+  background-color: black;
+}
+nav{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  margin: 30px 50px;
+}
+nav ul li a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  
+  text-transform: uppercase;
+  font-family:sans-serif;
+  letter-spacing: 1px;
+ 
+}
+nav ul li a:hover{
+  color: #ffe165;
+text-decoration: none;
+}
+
+#profile
+{
+  font-size:35px;
+  color:white;
+  position:absolute;
+  right:6%;
+  top:5%;
+
+}
+#profile:hover
+{
+color: #ffe165 ;
+}
+
+
+footer {
+	text-align: center;
+	background-color: #1f3646;
+	padding: 60px 0px;
+}
+
+footer .primary-button {
+	margin-bottom: 40px;
+}
+
+footer p {
+	color: #fff;
+	font-size: 12px;
+	margin-top: 40px; 	
+}
+.primary-button a {
+	text-decoration: none;
+	margin-top: 15px;
+	width: auto;
+	padding: 0px 18px;
+	height: 36px;
+	background-color: #ffe165;
+	font-size: 13px;
+	color: #121212;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px;
+}
+.plane{
+  margin: 30px;
+  margin-right: 100px;
+  margin-top: 1px;
+  margin-left: 90px;
+}
+
+.login-box {
+  width: 360px;
+  height: 130px;
+  margin: auto;
+  padding: 12px;
+  padding-bottom: 5px;
+  padding-top: 2px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+}
+.login-box .red{
+  color: #f44336;
+}
+.login-box h3{
+  color:#f44336;
+}
+

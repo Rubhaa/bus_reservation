@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    	<title>NRY Travels | Success</title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
+
+<body>
+
+    <div class="header">
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Login/Sign-Up</a></li>
+                <li><a href="/profile"><i class='fa fa-user' id="profile"></i></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+
+    
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="images/p1.png" >
+                            <h1 style="color:#ffe165;text-align: center;font-family:Verdana, Geneva, Tahoma, sans-serif ">NRY Travels</h1>
+                        </div>
+                        <div class="page-direction-button">
+                            <a href="#contact">Thank you! Have a safe Ride</a>
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4>Ticket Confirmed!</h4>
+                                <form id="form-submit" action="success1" method="get">
+                                    <div class="row">
+                                        <% checkingsList.forEach( checking => {%>
+                                        <div class="col-md-6" id="display">
+                                            <fieldset>
+                                                <label for="from">Your Unique Travel code:</label>
+                                                <p id="unique">1001</p>
+                                            
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Name:</label>
+                                                <p id="name"><%= checking.name %></p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Phone:</label>
+                                                <p id="phone"><%= checking.phone %></p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Email:</label>
+                                                <p id="email"><%= checking.email %></p>
+                                            </fieldset>
+                                          
+                                            <fieldset>
+                                                <label for="from">Boarding Point :</label>
+                                                <p id="checking"><%= checking.boardingpoint %></p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Dropping Point :</label>
+                                                <p id="dropping"><%= checking.dropping %></p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Date:</label>
+                                                <p id="date"><%= checking.traveldate %></p>
+                                            </fieldset>
+                                            <fieldset>
+                                                <label for="from">Time:</label>
+                                                <p id="start"><%= checking.start %></p>
+                                            </fieldset>
+                                        </div>
+                                        <%})%> 
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 NRY Travels
+            
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

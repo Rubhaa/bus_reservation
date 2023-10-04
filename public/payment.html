@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Payment </title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/styles.css">
+    
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+
+
+</head>
+<body>
+  <div class="header">
+    <img style="width: 110px;
+        height:70px;
+        padding: 10px 20px;
+        margin-top: 10px;" src="images/p1.png" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Login/Sign-Up</a></li>
+            <li><a href="/profile"><i class='fa fa-user' id="profile"></i></a></li>
+        </ul>
+    </nav>
+
+</div>
+
+ <div class="wrapper">
+   <div class="payment">
+     <div class="payment-logo">
+       <p>p</p>
+     </div>
+     
+     
+     <h2>Payment Gateway</h2>
+    
+         
+       <form action="charge" method="post" class="box">
+         <div id="payment-card"></div>
+         <div id="payment-errors"></div>
+         <input type="submit" name="ok" id="ok" value="ok">
+     </form>
+       
+     </div>
+   </div>
+ </div>
+ <script src="https://js.stripe.com/v3/"></script>
+ <script src="payment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ 
+ 
+ 
+ <script src="js/script.js"></script>
+ <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               
+            </div>
+          
+            <div class="col-md-12">
+              
+                <p>Copyright &copy; 2023 NRY Travels
+        
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+ 
+ </body>
+ </html>

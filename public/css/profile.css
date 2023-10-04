@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url(../images/lights.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.logo{
+    width: 110px;
+    height:70px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.header{
+   
+    width: 100%;
+    height: 95px;
+    background-color: black;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 30px 50px;
+}
+nav ul li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    font-family:sans-serif;
+    letter-spacing: 1px;
+   
+}
+nav ul li a:hover{
+    color: #ffe165;
+	text-decoration: none;
+}
+
+#profile
+{
+    font-size:35px;
+    color:white;
+    position:absolute;
+    right:6%;
+    top:5%;
+
+}
+#profile:hover
+{
+	color: #ffe165 ;
+}
+.user-details{
+    background:#dbdada;
+    width: 30%;
+    height: 40rem;
+    margin: 70px;
+    margin-left:30%;
+}
+
+.user-details .user{
+    padding:2rem;
+    max-width: 40rem;
+    margin:0 auto;
+ }
+ 
+ .user-details .user img{
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    margin-bottom: 2rem;
+ }
+ 
+ .user-details .user p{
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+ }
+ 
+ .user-details .user p span{
+    color:black;
+ }
+ 
+ .user-details .user i{
+    margin-right: .7rem;
+    color:black;
+ }
+ 
+ .user-details .user p.address{
+    margin-top: 2rem;
+ }
+ .btn{
+    background-color:#ffe165;
+    color:black;
+    transition: .2;
+    margin: 20px;
+    padding: 10px 30px;
+ }
+ .form-container{
+    background:#dbdada;
+    width: 30%;
+    height: 53rem;
+    margin: 50px;
+    margin-left:30%;
+}
+
+ .form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+
+    padding:2rem;
+    text-align: center;
+ }
+ 
+ .form-container form h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:black;
+ }
+ 
+ .form-container form .box{
+    margin:1rem 0;
+    padding:1.4rem;
+    color:black;
+    border:var(--border);
+    font-size: 1.5rem;
+    width: 100%;
+ }
+ 
+ .form-container form p{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+ }
+ 
+ .form-container form p a{
+    font-size: 2rem;
+    color: #ffe165;
+ }
+ 
+ .form-container form p a:hover{
+    color:black;
+ }
+ 

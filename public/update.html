@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Update | NRY Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="header">
+        <img src="images/p1.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Login/Sign-Up</a></li>
+                <li><a href="profile.html"><i class='fa fa-user' id="profile"></i></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+
+    <section class="form-container">
+
+        <form action="update_pro" method="POST">
+           <h3>Update Profile</h3>
+           <input type="text" required maxlength="20" name="name" id="name" placeholder="enter your name" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="" >     
+           <input type="numner" name="number" id="number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" placeholder="enter your number" required class="box" value="">
+           <input type="password" id="new_pass"name="new_pass" maxlength="20"  placeholder="enter your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="password" maxlength="20" name="confirm_pass" id="confirm_pass"  placeholder="confirm your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+           <input type="submit" class="btn" value="update"/>
+        </form>
+     </section>
+
+
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 NRY Travels
+            
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

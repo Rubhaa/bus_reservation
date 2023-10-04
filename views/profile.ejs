@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | NRY Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="header">
+        <img src="images/p1.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Login/Sign-Up</a></li>
+                <li><a href="/profile"><i class='fa fa-user' id="profile"></i></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+
+    <section class="user-details">
+
+        <div class="user">
+           <img src="images/user-icon.png" alt="">
+           <% usersList.forEach( user => {%>
+            <form action="logo" method="post">
+           <p><i class="fas fa-user"></i> <span><%= user.name%></span></p>
+           <p><i class="fas fa-phone"></i> <span><%= user.phone%></span></p>
+           <p><i class="fas fa-envelope"></i> <span><%= user.email%></span></p>
+           <a href="update.html" class="btn">update profile</a>
+           
+           <a href="/logout" class="btn">Logout</a>
+           </form>
+           <%})%>
+        </div>
+     
+     </section>
+
+
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+              
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 NRY Travels
+            
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
